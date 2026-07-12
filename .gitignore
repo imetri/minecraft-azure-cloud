@@ -1,0 +1,64 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+secrets/
+credentials/
+
+# SSH private keys
+*.pem
+*.key
+*.ppk
+*.pfx
+id_rsa
+id_ed25519
+
+# Minecraft runtime data
+server-data/
+world/
+world_nether/
+world_the_end/
+logs/
+cache/
+
+# Minecraft plugin binaries
+plugins/*.jar
+
+# Backups
+backups/*
+!backups/.gitkeep
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Docker runtime overrides
+docker-compose.override.yml
+
+# Terraform-generated files and state
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+*.auto.tfvars
+crash.log
+crash.*.log
+
+# Ansible temporary files
+*.retry
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary and log files
+*.tmp
+*.temp
+*.log
