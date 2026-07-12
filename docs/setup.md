@@ -7,7 +7,7 @@ server infrastructure.
 
 - [x] GitHub repository created
 - [x] Initial repository structure created
-- [ ] Azure resource group created
+- [x] Azure resource group created
 - [ ] Ubuntu virtual machine deployed
 - [ ] SSH access configured
 - [ ] Docker installed
