@@ -18,8 +18,8 @@ and monitoring.
 - [x] Docker Engine installed
 - [x] Docker Compose installed
 - [x] Docker container execution validated
-- [ ] Minecraft Paper container deployed
-- [ ] Minecraft client connection validated
+- [x] Minecraft Paper container deployed
+- [x] Minecraft client connection validated
 - [ ] Automated backups configured
 - [ ] Restore procedure tested
 - [ ] GitHub Actions deployment configured
@@ -65,3 +65,26 @@ docker compose version
 docker buildx version
 containerd --version
 docker run --rm hello-world
+
+## Runtime Validation Results
+
+The Minecraft Paper deployment was successfully validated on the Azure virtual
+machine.
+
+| Validation | Result |
+| Docker Compose configuration | Passed |
+| Paper container startup | Passed |
+| Container health status | `healthy` |
+| Minecraft version | `1.21.11` |
+| Java version | Java 21 |
+| Player whitelist | Enabled and enforced |
+| Online authentication | Enabled |
+| Minecraft client connection | Passed |
+| Container restart policy | `unless-stopped` |
+| Persistent data mount | `/srv/minecraft/data -> /data` |
+| Container recreation test | Passed |
+| World data retained | Passed |
+
+The server was initially exposed only to the administrator's public IP through
+an Azure Network Security Group rule. Public internet access was not enabled
+during initial validation.
