@@ -1,0 +1,11 @@
+[Unit]
+Description=Run the Minecraft backup every day
+
+[Timer]
+OnCalendar=*-*-* 00:30:00
+Persistent=true
+RandomizedDelaySec=2m
+Unit=minecraft-backup.service
+
+[Install]
+WantedBy=timers.target
