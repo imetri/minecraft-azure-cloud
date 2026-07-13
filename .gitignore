@@ -15,6 +15,7 @@ id_ed25519
 
 # Minecraft runtime data
 server-data/
+minecraft-data/
 world/
 world_nether/
 world_the_end/
@@ -62,3 +63,6 @@ desktop.ini
 *.tmp
 *.temp
 *.log
+
+# Runtime secrets
+secrets/
